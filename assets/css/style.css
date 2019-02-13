@@ -1,0 +1,31 @@
+#index {background-image: url("../images/Full-island.jpg");
+      background-size: 1300px;
+      background-position: center;
+      background-color: rgb(56, 66, 100);}
+
+#beach {background-image: url("../images/beach.jpg");
+      background-size: 1300px;
+      background-position: center;
+      background-color: rgb(167, 237, 247);}
+
+#cave {background-image: url("../images/cave.jpg");
+      background-color: rgb(92, 39, 15);
+      background-position: center;
+      background-size: 100%;
+      color: white;}
+
+#jungle {background-image: url("../images/jungle.jpg");
+      background-size: 100%;
+      background-position: center;
+      background-color: rgb(9, 63, 9);
+      color: white;}
+
+.specimens {width: 270px;}
+
+#beetle-green {width: 120px;}
+
+
+.locations {width: 300px;
+            height: 300px ;
+            border-radius: 500px;
+            opacity: 1;}
