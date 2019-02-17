@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Flamenco|Raleway|Seaweed+Script" rel="stylesheet">
+
+    <title>Jungle | Treasure Island</title>
 </head>
 
 
 <body id="jungle">
 
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent; font-size: 15px;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent; font-size: 20px; font-family: 'Flamenco', cursive;">
                 <a class="navbar-brand" href="index.html">Treasure Island</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -22,63 +24,103 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" href="beach.html">The Beach <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="beach.html">Glitter Beach</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="jungle.html">The Jungle</a>
+                      <a class="nav-link" href="jungle.html">Emerald Jungle<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="cave.html">The Cave</a>
+                      <a class="nav-link" href="cave.html">Crystal Cave</a>
                     </li>
                   </ul>
                 </div>
         </nav> 
-    <div class="container" id="Heading-text">
 
-        <h1>Exploration Fantastic</h1>
-        <h3>Welcome to  island Dr. ______________</h3>
-        <h5>It is an honor to have such a highly esteemed naturalist in our midst. Are you ready for a challenge?</h5>
-        <h5>This island holds a bounty of natural treasures that have yet to be discovered by modern science. However, the island also holds great dangers. </h5>
-        <h5>You must take great care while traversing our island, or risk the many perils that have befallen many a seasoned explorer.</h5>
-        <h5>Follow the instructions below to ensure your safety and success.</h5>
-        <br>
-        <p>Instructions</p>
-      
+  
+    <div class="container mt-3" id="Heading-text">
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+            <button id="jungleButton" class="button align-center">Click for Sound</button>
+        </div>
+        <div class="col-md-5"></div> 
       </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h1>Emerald Jungle</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 pt-2" style="background-color: rgba(77, 74, 74, 0.479)">
+            <p>Welcome to the jungle. This place is absolutely teeming with undiscovered wonders. If you're careful, you will add some incredible specimens to your collection. And if you're not careful...</p>
+            <p><strong>Instructions:</strong></p>
+            <ol class="instructions">
+              <li>To collect specimens, click on their images below. </li> 
+              <li>As you gather your specimen samples, you will see your accumulated risk increase. each specimen provides a different level of risk. As you gather specimens, pay close attention to your accumulated risk! </li> 
+              <li>If your accumulated risk reaches the risk threshold without going over, you may leave the jungle safely with your collection.</li> 
+              <li>However, if your accumulated risk surpasses the risk threshold, you won't survive this mission. Best of luck to you!</li>
+              </ol>
+            </div>
+          </div>
+          <br><br><br><br>
+          <div class='row'>
+            <div class='col-md-9'>
+                <h3>Wins: <span id="wins"></span></h3>
+                <h3>Losses: <span id="losses"></span></h3>
+            </div>
+            <div class='col-md-3'>
+                <h2><strong>Your Collection:</strong></h2>
+                <h3>Orchids: <span id="specimen1"></span></h3>
+                <h3>Bird Eggs: <span id="specimen2"></span></h3>
+                <h3>Green Beetles: <span id="specimen3"></span></h3>
+                <h3>Butterflies: <span id="specimen4"></span></h3>
+            </div>
+          </div>
+          
+        </div>           
       
-      <div class="container">
-      <!-- Instructions and description -->
+    
+      
+    <div class="container">
         <div class="row">
           <div class="col-md-4"></div>
           <div class="col-md-4">
-                <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+                <h2>Risk Threshold: <span id="number-to-guess"></span></h2>
           </div>
+          <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+                <h3>Accumulated Risk: <span id="points"></span></h3>
+          </div>
+          <div class="col-md-4"></div>
         </div>
       
-      </div>
-      
-      <div class ="container">
-      <!-- two button images in a row -->
+    </div>
+    <br><br><br>
+    <div class ="container">
+    
         <div class="row">
           <div class="col-md-3">
-            <img class="specimens" src="assets/images/butterfly.png">
+            <img class="orchid" id="image1" src="assets/images/orchid.png">
           </div>
           <div class="col-md-3">
-            <img class="specimens" src="assets/images/eggs-nest.png">
+            <img class="specimens" id="image2" src="assets/images/nest.png">
           </div>
           <div class="col-md-3">
-            <img id="beetle-green" src="assets/images/beetle-green.png">
-          </div>
+            <img class="specimens" id="image4" src="assets/images/butterfly.png">
+          </div>  
           <div class="col-md-3">
-            <img class="specimens" src="assets/images/orchid.png">
+            <img class="beetle-green" id="image3" src="assets/images/beetle-green.png">
           </div>
-         
+                 
         </div>
-      
-        
-      
-        </div>
-      
+
+      </div>
+      <br><br><br><br><br><br><br><br>  
       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
       <script type="text/javascript" src="assets/javascript/game.js"></script>    
 </body>

@@ -1,7 +1,7 @@
 #index {background-image: url("../images/Full-island.jpg");
       background-size: 1300px;
       background-position: center;
-      background-color: rgb(56, 66, 100);}
+      background-color: rgb(3, 3, 3);}
 
 #beach {background-image: url("../images/beach.jpg");
       background-size: 1300px;
@@ -14,16 +14,72 @@
       background-size: 100%;
       color: white;}
 
-#jungle {background-image: url("../images/jungle.jpg");
+#jungle {background-image: url("../images/jungle3.jpg");
       background-size: 100%;
       background-position: center;
       background-color: rgb(9, 63, 9);
-      color: white;}
+      color: white;
+      text-shadow: 1px 1px #292828;}
+
+   h1 {font-family: 'Seaweed Script', cursive;
+      opacity: .8;
+      text-shadow: 1px 1px #292828;
+      font-size: 50px;}
+   h2, h3 {font-family: 'Flamenco', cursive;
+      opacity: .7;
+   }
+   h5, p {font-family: 'Raleway', sans-serif;
+            opacity: .9;
+            size: 10px;
+            letter-spacing: 1px;
+      }
+
+    .instructions {font-family: 'Raleway', sans-serif;
+        opacity: .8;
+        size: 10px;
+        letter-spacing: 1px;}
+
+  .button {font-family: 'Flamenco', cursive;
+            color: white;
+            background-color: rgba(72, 88, 90, 0.445);
+            border-radius: 50px;
+            border: 2px double;
+            border-color: rgba(144, 215, 224, 0.445)}
+.overlay {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ transition: .5s ease;
+ background-color: transparent;
+}
+.container:hover .overlay {
+ opacity: .8;
+}
+.text {
+ color: white;
+ font-size: 80px;
+ position: absolute;
+ top: 50%; 
+ left: 45%;
+ transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ font-family: 'Seaweed Script', cursive;
+}
+     
+      
 
 .specimens {width: 270px;}
 
-#beetle-green {width: 120px;}
-
+.beetle-green {width: 120px;}
+.orchid {width: 220px;}
+.quartz {width: 170px;}
+.beetle-gold {width: 220px;}
+.water {width: 150px;}
 
 .locations {width: 300px;
             height: 300px ;
