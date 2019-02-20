@@ -1,25 +1,17 @@
 # unit-4-game
 . [Watch the demo](https://youtu.be/yNI0l2FMeCk).
 
+Trivia Game Instructions:
 
-Four images on the page will be buttons
+The set-up...
+On each page, you will find "specimen" images that can be clicked. 
+There are two numbers: Risk threshold (a randomly generated number), and accumulated risk (initializes to zero). 
+There is also a collection counter that lists the accumulating quantities of the collected specimens. 
+Each of the "specimen" images is associated with a random number. When the image is clicked, that number is added to the accumulated risk.
 
+The objective...
+The goal is to have the accumulated risk equal the risk threshold. If the accumulated risk goes over the risk threshold, the user loses the game. 
 
-Page loads a random number between 19 and 120 using math.random, and appends that number to a div in the HTML
-
-
-When the player clicks one of the buttons, an onclick event will add feed a number of points between 1 and 12 to the score.
-The score is the sum of the button clicks, and is appended to a div in the HTML. 
-
-
-Each time the game restarts, the buttons will have new point values.
-
-When the random number == the score, the player wins and the game resets.
-
-
-If the score > the random number, the player loses and the game resets.
-
-
-The number of wins and loses should add up on the page.
+Use the navigation images on the welcome page, or the navigation buttons in the nav bar to visit different parts of the island and play the game in different settings.
 
 
