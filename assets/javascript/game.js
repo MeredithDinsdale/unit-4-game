@@ -131,18 +131,19 @@ $(document).ready(function() {
  function loser() {
   console.log('You Lost...');
   losses++;
-  if (path === '/C:/Users/Meredith/Documents/code/unit-4-game/beach.html') {
-    let beachDeath = beachDeathArray[Math.floor(Math.random() * beachDeathArray.length)];
-    alert('You have been killed by ' +beachDeath);
-  }
-  else if (path === '/C:/Users/Meredith/Documents/code/unit-4-game/jungle.html') {
-    let jungleDeath = jungleDeathArray[Math.floor(Math.random() * jungleDeathArray.length)];
-    alert('You have been killed by ' +jungleDeath);
-  }
-  else if (path === '/C:/Users/Meredith/Documents/code/unit-4-game/cave.html') {
-    let caveDeath = caveDeathArray[Math.floor(Math.random() * caveDeathArray.length)];
-    alert('You have been killed by ' +caveDeath);
-  }
+  alert('You have succumbed to the island, like many before. You will feed it and it\'s powers will grow.');
+  // if (path === '/C:/Users/Meredith/Documents/code/unit-4-game/beach.html') {
+  //   let beachDeath = beachDeathArray[Math.floor(Math.random() * beachDeathArray.length)];
+  //   alert('You have been killed by ' +beachDeath);
+  // }
+  // else if (path === '/C:/Users/Meredith/Documents/code/unit-4-game/jungle.html') {
+  //   let jungleDeath = jungleDeathArray[Math.floor(Math.random() * jungleDeathArray.length)];
+  //   alert('You have been killed by ' +jungleDeath);
+  // }
+  // else if (path === '/C:/Users/Meredith/Documents/code/unit-4-game/cave.html') {
+  //   let caveDeath = caveDeathArray[Math.floor(Math.random() * caveDeathArray.length)];
+  //   alert('You have been killed by ' +caveDeath);
+  // }
   }
 
   function reset() {

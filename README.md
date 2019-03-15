@@ -1,7 +1,7 @@
 # unit-4-game
 . [Watch the demo](https://youtu.be/yNI0l2FMeCk).
 
-Trivia Game Instructions:
+Treasure Island Game Instructions:
 
 The set-up...
 On each page, you will find "specimen" images that can be clicked. 
